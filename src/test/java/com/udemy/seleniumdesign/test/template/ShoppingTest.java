@@ -11,16 +11,15 @@ import org.testng.annotations.Test;
 public class ShoppingTest extends BaseTest {
 
     @Test(dataProvider = "getData")
-    public void shoppingTest(ShoppingTemplate shoppingTemplate){
+    public void shoppingTest(ShoppingTemplate shoppingTemplate) {
         shoppingTemplate.shop();
     }
 
     @DataProvider
-    public Object[] getData(){
-        return new Object[]{
-                new AmazonShopping(driver, "samsung 4k"),
-                new EBayShopping(driver, "samsung 4k")
-
+    private Object[][] getData() {
+        return new Object[][]{
+                {new AmazonShopping(driver, "samsung 4k")},
+                {new EBayShopping(driver, "samsung 4k")}
         };
     }
 }
