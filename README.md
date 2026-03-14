@@ -5,8 +5,8 @@ This project is a comprehensive implementation of various **Software Design Patt
 ## Tech Stack
 * **Language:** Java 11+
 * **Framework:** Selenium WebDriver / Selenide
-* **Build Tool:** Maven / Gradle
-* **Test Runner:** TestNG / JUnit
+* **Build Tool:** Maven 
+* **Test Runner:** TestNG 
 
 ## Implemented Patterns & Use Cases
 
